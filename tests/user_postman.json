@@ -12,12 +12,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{server}/user",
+					"raw": "{{server}}/utilisateur",
 					"host": [
-						"{server}"
+						"{{server}}"
 					],
 					"path": [
-						"user"
+						"utilisateur"
 					]
 				}
 			},
@@ -29,12 +29,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{server}/user/id",
+					"raw": "{{server}}/utilisateur/id",
 					"host": [
-						"{server}"
+						"{{server}}"
 					],
 					"path": [
-						"user",
+						"utilisateur",
 						"id"
 					]
 				}
@@ -48,7 +48,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n        \"nom\": \"Buno Test\",\r\n        \"email\": \"bunotest@example.com\",\r\n        \"mot_de_passe\": \"bunotest456\",\r\n        \"date_derniere_connexion\": \"2024-12-10T12:45:00\",\r\n        \"statut\": \"Non\",\r\n        \"role\": \"utilisateur\"\r\n    }",
+					"raw": "{\r\n    \"nom\": \"Sophie\",\r\n    \"email\": \"sophie@example.com\",\r\n    \"mot_de_passe\": \"password789\",\r\n    \"date_derniere_connexion\": \"2024-12-19T10:00:00\",\r\n    \"statut\": \"Oui\",\r\n    \"role\": \"utilisateur\"\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -56,12 +56,12 @@
 					}
 				},
 				"url": {
-					"raw": "{server}/user",
+					"raw": "{{server}}/utilisateur",
 					"host": [
-						"{server}"
+						"{{server}}"
 					],
 					"path": [
-						"user"
+						"utilisateur"
 					]
 				}
 			},
@@ -74,7 +74,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n        \"nom\": \"Buno Test\",\r\n        \"email\": \"bunotest@example.com\",\r\n        \"mot_de_passe\": \"bunotest456\",\r\n        \"date_derniere_connexion\": \"2024-12-10T12:45:00\",\r\n        \"statut\": \"Non\",\r\n        \"role\": \"utilisateur\"\r\n    }",
+					"raw": "{\r\n    \"id\": \"1\",\r\n    \"nom\": \"Patrick Dupont\",\r\n    \"email\": \"patrick.dupont@example.com\",\r\n    \"mot_de_passe\": \"newpassword123\",\r\n    \"date_derniere_connexion\": \"2024-12-19T10:30:00\",\r\n    \"statut\": \"Oui\",\r\n    \"role\": \"intervenant\"\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -82,12 +82,13 @@
 					}
 				},
 				"url": {
-					"raw": "{server}/user",
+					"raw": "{{server}}/utilisateur/id",
 					"host": [
-						"{server}"
+						"{{server}}"
 					],
 					"path": [
-						"user"
+						"utilisateur",
+						"id"
 					]
 				}
 			},
@@ -99,12 +100,13 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{server}/user",
+					"raw": "{{server}}/utilisateur/id",
 					"host": [
-						"{server}"
+						"{{server}}"
 					],
 					"path": [
-						"user"
+						"utilisateur",
+						"id"
 					]
 				}
 			},

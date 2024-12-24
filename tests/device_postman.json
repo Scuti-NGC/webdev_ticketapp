@@ -12,12 +12,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{server}/device",
+					"raw": "{{server}}/poste",
 					"host": [
-						"{server}"
+						"{{server}}"
 					],
 					"path": [
-						"device"
+						"poste"
 					]
 				}
 			},
@@ -29,12 +29,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{server}/device/id",
+					"raw": "{{server}}/poste/id",
 					"host": [
-						"{server}"
+						"{{server}}"
 					],
 					"path": [
-						"device",
+						"poste",
 						"id"
 					]
 				}
@@ -48,7 +48,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n        \"utilisateur_affecte\": \"Buno Test\",\r\n        \"etat\": \"En fonction\",\r\n        \"configuration\": \"Processeur: Intel Core i7-11700, RAM: 16 Go DDR4, Stockage: SSD 512 Go, Carte graphique: NVIDIA GeForce GTX 1660, Système d'exploitation: Windows 11 Pro\"\r\n    }",
+					"raw": "{\r\n    \"utilisateur_affecté\": \"Sophie\",\r\n    \"etat\": \"En fonction\",\r\n    \"configuration\": \"Processeur: Intel Core i5, RAM: 8 Go, Stockage: SSD 256 Go, Carte graphique: Intégrée, Système d'exploitation: Windows 10\"\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -56,12 +56,12 @@
 					}
 				},
 				"url": {
-					"raw": "{server}/device",
+					"raw": "{{server}}/poste",
 					"host": [
-						"{server}"
+						"{{server}}"
 					],
 					"path": [
-						"device"
+						"poste"
 					]
 				}
 			},
@@ -74,7 +74,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n        \"utilisateur_affecte\": \"Buno Test\",\r\n        \"etat\": \"En fonction\",\r\n        \"configuration\": \"Processeur: Intel Core i7-11700, RAM: 16 Go DDR4, Stockage: SSD 512 Go, Carte graphique: NVIDIA GeForce GTX 1660, Système d'exploitation: Windows 11 Pro\"\r\n    }",
+					"raw": "{\r\n    \"id\": \"3\",\r\n    \"utilisateur_affecté\": \"Jean\",\r\n    \"etat\": \"En maintenance\",\r\n    \"configuration\": \"Processeur: AMD Ryzen 5, RAM: 16 Go, Stockage: SSD 512 Go, Carte graphique: NVIDIA GeForce GTX 1650, Système d'exploitation: Windows 11\"\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -82,12 +82,13 @@
 					}
 				},
 				"url": {
-					"raw": "{server}/device",
+					"raw": "{{server}}/poste/id",
 					"host": [
-						"{server}"
+						"{{server}}"
 					],
 					"path": [
-						"device"
+						"poste",
+						"id"
 					]
 				}
 			},
@@ -99,12 +100,13 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{server}/device",
+					"raw": "{{server}}/poste/id",
 					"host": [
-						"{server}"
+						"{{server}}"
 					],
 					"path": [
-						"device"
+						"poste",
+						"id"
 					]
 				}
 			},

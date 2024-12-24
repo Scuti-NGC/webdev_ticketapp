@@ -12,12 +12,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{server}/tickets",
+					"raw": "{{server}}/ticket",
 					"host": [
-						"{server}"
+						"{{server}}"
 					],
 					"path": [
-						"tickets"
+						"ticket"
 					]
 				}
 			},
@@ -29,12 +29,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{server}/tickets/id",
+					"raw": "{{server}}/ticket/id",
 					"host": [
-						"{server}"
+						"{{server}}"
 					],
 					"path": [
-						"tickets",
+						"ticket",
 						"id"
 					]
 				}
@@ -48,7 +48,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n        \"titre\": \"Probleme de connexion reseau\",\r\n        \"description\": \"L'utilisateur Buno Test ne peut pas se connecter au reseau local depuis son poste informatique.\",\r\n        \"date_creation\": \"2024-12-12T08:30:00\",\r\n        \"date_mise_a_jour\": \"2024-12-12T11:30:00\",\r\n        \"impact\": \"Bloquant\",\r\n        \"etat\": \"En cours\",\r\n        \"utilisateur_createur\": \"Patrick\",\r\n        \"poste_informatique\": \"1\",\r\n        \"type_demande\": \"Probleme réseau\"\r\n    }",
+					"raw": "{\r\n    \"titre\": \"Problème d'imprimante\",\r\n    \"description\": \"L'imprimante ne répond pas aux commandes depuis hier.\",\r\n    \"date_creation\": \"2024-12-19T08:45:00\",\r\n    \"date_mise_a_jour\": \"2024-12-19T08:45:00\",\r\n    \"impact\": \"Majeur\",\r\n    \"etat\": \"Ouvert\",\r\n    \"utilisateur_createur\": \"Marylise\",\r\n    \"poste_informatique\": \"3\",\r\n    \"type_demande\": \"Problème matériel\"\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -56,9 +56,9 @@
 					}
 				},
 				"url": {
-					"raw": "{server}/ticket",
+					"raw": "{{server}}/ticket",
 					"host": [
-						"{server}"
+						"{{server}}"
 					],
 					"path": [
 						"ticket"
@@ -100,12 +100,13 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{server}/tickets",
+					"raw": "{{server}}/ticket/id",
 					"host": [
-						"{server}"
+						"{{server}}"
 					],
 					"path": [
-						"tickets"
+						"ticket",
+						"id"
 					]
 				}
 			},
